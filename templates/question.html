@@ -1,0 +1,24 @@
+{% extends 'base.html' %}
+
+{% block title %}实习发布{% endblock %}
+
+{% block head %}
+
+{% endblock %}
+
+{% block main %}
+    <h3 class="page-title">发布实习</h3>
+    <form action="" method="post">
+        <div class="form-container">
+            <div class="form-group">
+                <input type="text" placeholder="请输入实习名称" name="title" class="form-control">
+            </div>
+            <div class="form-group">
+                <textarea name="content" placeholder="实习内容描述(时间、地点等)" rows="10" class="form-control"></textarea>
+            </div>
+            <div class="form-group">
+                <button class="btn btn-primary">立即发布</button>
+            </div>
+        </div>
+    </form>
+{% endblock %}
