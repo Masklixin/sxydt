@@ -39,6 +39,9 @@ def login():
             #如果登录一次之后，想在31天内都不需要登录
             session.permanent=True
             return redirect(url_for('index'))
+        # elif usernum==None or password==None:
+        #     return '用户名或密码不能为空'
+
         else:
             return "学号或者密码错误"
 
